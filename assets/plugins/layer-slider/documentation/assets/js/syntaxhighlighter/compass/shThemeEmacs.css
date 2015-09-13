@@ -1,0 +1,97 @@
+/* line 41, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+.syntaxhighlighter {
+  background-color: black !important; }
+  /* line 46, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .line.alt1 {
+    background-color: black !important; }
+  /* line 47, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .line.alt2 {
+    background-color: black !important; }
+  /* line 51, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
+    background-color: #2A3133 !important; }
+  /* line 52, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .line.highlighted.number {
+    color: white !important; }
+  /* line 57, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter table caption {
+    color: #d3d3d3 !important; }
+  /* line 63, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .gutter {
+    color: #d3d3d3 !important; }
+    /* line 65, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+    .syntaxhighlighter .gutter .line {
+      border-right: 3px solid #990000 !important; }
+      /* line 68, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+      .syntaxhighlighter .gutter .line.highlighted {
+        background-color: #990000 !important;
+        color: black !important; }
+  /* line 75, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter.printing .line .content {
+    border: none !important; }
+  /* line 77, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter.collapsed {
+    overflow: visible !important; }
+    /* line 80, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+    .syntaxhighlighter.collapsed .toolbar {
+      color: #ebdb8d !important;
+      background: black !important;
+      border: 1px solid #990000 !important; }
+      /* line 85, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+      .syntaxhighlighter.collapsed .toolbar a {
+        color: #ebdb8d !important; }
+        /* line 87, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+        .syntaxhighlighter.collapsed .toolbar a:hover {
+          color: #ff7d27 !important; }
+  /* line 92, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .toolbar {
+    color: #fff !important;
+    background: #990000 !important;
+    border: none !important; }
+    /* line 96, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+    .syntaxhighlighter .toolbar a {
+      color: #fff !important; }
+      /* line 98, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+      .syntaxhighlighter .toolbar a:hover {
+        color: #9ccff4 !important; }
+  /* line 103, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .plain, .syntaxhighlighter .plain a {
+    color: #d3d3d3 !important; }
+  /* line 104, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+    color: #ff7d27 !important; }
+  /* line 105, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .string, .syntaxhighlighter .string a {
+    color: #ff9e7b !important; }
+  /* line 106, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .keyword {
+    color: aqua !important; }
+  /* line 107, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .preprocessor {
+    color: #aec4de !important; }
+  /* line 108, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .variable {
+    color: #ffaa3e !important; }
+  /* line 109, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .value {
+    color: #009900 !important; }
+  /* line 110, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .functions {
+    color: #81cef9 !important; }
+  /* line 111, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .constants {
+    color: #ff9e7b !important; }
+  /* line 112, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .script {
+    font-weight: bold !important;
+    color: aqua !important;
+    background-color: none !important; }
+  /* line 117, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
+    color: #ebdb8d !important; }
+  /* line 118, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
+    color: #ff7d27 !important; }
+  /* line 119, ../plugins/layer-slider/documentation/assets/js/syntaxhighlighter/compass/_theme_template.scss */
+  .syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
+    color: #aec4de !important; }
