@@ -63,3 +63,8 @@
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+.centered-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
