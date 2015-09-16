@@ -41,12 +41,23 @@
 }
 
 
+.product-header {
+  padding: 0 0 0 75px; /* 75px being the width of the thumbnail + how much space you want to put between it and your text */
+  position: relative; /* So the thumbnail is relative to this */
+}
+
 .product-header img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+  
+/*.product-header img {
   float: left;
   height: auto;
   margin: 0 20px;
 }
-
+*/
 .product-block {
   border-bottom: solid 1px #eee;
 }
@@ -63,8 +74,29 @@
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-.centered-vertical {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.v-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.frame-it-green {
+  outline: 2px dotted green;
+}
+
+.frame-it-red {
+  outline: 2px dotted red;
+}
+
+.frame-it-blue {
+  outline: 2px dotted blue;
 }

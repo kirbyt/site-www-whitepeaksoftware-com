@@ -126,14 +126,17 @@
       <div class='row'>
         <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2>More Info</h2>
+            <h2 data-drip-attribute='headline'>Newsletter</h2>
           </div>
-          <ul class='list-unstyled link-list'>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/retiredproducts">Retired Products</a></li>
-            <li><a href="/privacypolicy">Privacy Policy</a></li>
-          </ul>
+          <p data-drip-attribute='description'>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+          <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
+            <div class='input-group'>
+              <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
+              <span class='input-group-btn'>
+                <button class='btn-u' data-drip-attribute='sign-up-button' form='formNewsletter' type='submit' value='Subscribe'>Subscribe</button>
+              </span>
+            </div>
+          </form>
         </div>
         <div class='col-md-4 md-margin-bottom-40'>
           <!-- .posts -->
@@ -153,19 +156,16 @@
           <!-- = link_to('More White Peak News...', '/') -->
           <!-- %i.fa.fa-angle-right -->
         </div>
-        <div class='col-md-4'>
+        <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2 data-drip-attribute='headline'>Newsletter</h2>
+            <h2>More Info</h2>
           </div>
-          <p data-drip-attribute='description'>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-          <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
-            <div class='input-group'>
-              <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
-              <span class='input-group-btn'>
-                <button class='btn-u' data-drip-attribute='sign-up-button' form='formNewsletter' type='submit' value='Subscribe'>Subscribe</button>
-              </span>
-            </div>
-          </form>
+          <ul class='list-unstyled link-list'>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/retiredproducts">Retired Products</a></li>
+            <li><a href="/privacypolicy">Privacy Policy</a></li>
+          </ul>
         </div>
       </div>
     </div>
