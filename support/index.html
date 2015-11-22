@@ -54,6 +54,11 @@
 
     <link href="/assets/css/pages/blog.css" rel="stylesheet" />
 
+    <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <style type="text/css">
+        #licenseResponseError { display:none; }
+        #licenseResponseSuccess { display:none; }
+    </style>
 
     <!-- Fancybox -->
     <link rel="stylesheet" href="/assets/plugins/fancybox/source/jquery.fancybox.css">
@@ -110,10 +115,31 @@
         <a href='#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz'>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#119;&#104;&#105;&#116;&#101;&#112;&#101;&#097;&#107;&#115;&#111;&#102;&#116;&#119;&#097;&#114;&#101;&#046;&#099;&#111;&#109;</a>.
         Be sure to include a description of the problem you are having and any steps that lead up to the problem.
       </p>
-      <!-- %hr -->
-      <!-- %h3 Lost Your License Key -->
-      <!-- %p No problem, we understand. It happens to the best of us. Just supply us with your email address, and we'll email your license key(s) straight to your inbox. -->
-      <!-- %p If your email address has changed and is no longer what you purchased with, then contact us and we'll update our customer list and get everything taken care of. -->
+      <hr>
+      <h3>Lost Your License Key?</h3>
+      <p>No problem, we understand. It happens to the best of us. Just supply us with your email address, and we'll email your license key(s) straight to your inbox.</p>
+      <p>
+        <div class='licenseForm'>
+          <form id='formLicenseLookup'>
+            <div class='input-group'>
+              <input class='form-control' id='email' name='email' placeholder='Email Address' type='email'>
+              <span class='input-group-btn'>
+                <button class='btn-u' form='formLicenseLookup' type='submit' value='Lookup'>Send</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </p>
+      <div class='alert alert-danger' id='licenseResponseError'>
+        <strong>Your license was not found.</strong>
+        Sorry, but we can't seem to find your license information. You might want to try again with a different email address, or if that doesn't work, send us an
+        <a href="#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz">email</a>
+        with information about your order and we'll try finding your license another way.
+      </div>
+      <div class='alert alert-success' id='licenseResponseSuccess'>
+        <strong>Found your license!</strong>
+        Your license information was retrieved and sent your Inbox. Thank you.
+      </div>
       <hr>
       <h3>Frequently Asked Questions</h3>
       <p>Answers to our most commonly asked questions can be found here:</p>
@@ -179,6 +205,7 @@
           <ul class='list-unstyled link-list'>
             <li><a href="/about">About Us</a></li>
             <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/licenselookup">Lost License?</a></li>
             <li><a href="/retiredproducts">Retired Products</a></li>
             <li><a href="/privacypolicy">Privacy Policy</a></li>
           </ul>
@@ -221,6 +248,8 @@
 
 
 
+<script type="text/javascript" src="/assets-custom/js/license-lookup.js"></script>
+
 <script type="text/javascript" src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/assets/js/plugins/fancy-box.js"></script>
 
@@ -232,7 +261,7 @@
     jQuery(document).ready(function() {
         App.init();
         FancyBox.initFancybox();
-        OwlCarousel.initOwlCarousel();        
+        OwlCarousel.initOwlCarousel();
         LayerSlider.initLayerSlider();
     });
 </script>
