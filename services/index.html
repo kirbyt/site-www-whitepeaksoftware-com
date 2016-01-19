@@ -55,6 +55,12 @@
     <link href="/assets/css/pages/blog.css" rel="stylesheet" />
 
 
+    <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <style type="text/css">
+        #leadResponseError { display:none; }
+        #leadResponseSuccess { display:none; }
+    </style>
+
     <!-- Fancybox -->
     <link rel="stylesheet" href="/assets/plugins/fancybox/source/jquery.fancybox.css">
 
@@ -96,13 +102,112 @@
   </nav>
 </div>
 
-  <div class='container content content-sm'>
+  <!--=== Breadcrumbs v3 ===-->
+<div class='breadcrumbs-v3 header-service'>
+  <div class='container text-center'>
+    <h1>
+      Services
+    </h1>
+    <p>
+      Bringing You Vision To Life
+    </p>
+  </div>
+</div>
+<!--=== End Breadcrumbs v3 ===-->
+<!--=== Process v1 ===-->
+<div class='process-v1 bg-color-light'>
+  <div class='container content-sm'>
+    <div class='headline-center margin-bottom-60'>
+      <h2>OUR PROCESS</h2>
+      <p>
+        Our process takes your vision from concept to the App Store or beyond.
+        <br>
+        We can work with you through the entire process or you can select the
+        <br>
+        phase that you need assistance with. It's up to you.
+      </p>
+    </div>
+    <ul class='list-inline row process-in process-border'>
+      <li class='col-sm-3 sm-margin-bottom-50'>
+        <div class='process-icon'>
+          <i class='rounded-x dot-active'></i>
+        </div>
+        <div class='process-desc'>
+          <h3>Plan</h3>
+          <p>We start by creating a roadmap, which is a detail plan of what you want to accomplish. Armed with this plan of attack, your ready to build your mobile solution.</p>
+        </div>
+      </li>
+      <li class='col-sm-3 sm-margin-bottom-50'>
+        <div class='process-icon'>
+          <i class='rounded-x dot-active'></i>
+        </div>
+        <div class='process-desc'>
+          <h3>Build</h3>
+          <p>We can build your mobile solution for you, or work with your own development team to bring your vision to life.</p>
+        </div>
+      </li>
+      <li class='col-sm-3 sm-margin-bottom-50'>
+        <div class='process-icon'>
+          <i class='rounded-x dot-active'></i>
+        </div>
+        <div class='process-desc'>
+          <h3>Deploy</h3>
+          <p>We deploy frequent test versions so you can see the progress. And once the app is complete, we help you deploy and launch to your customers. This includes deploying to the App Store, Custom B2B deployment, and Enterprise distribution.</p>
+        </div>
+      </li>
+      <li class='col-sm-3 sm-margin-bottom-50'>
+        <div class='process-icon'>
+          <i class='rounded-x dot-active'></i>
+        </div>
+        <div class='process-desc'>
+          <h3>Support</h3>
+          <p>You are invested in your mobile solution, and so are we. That's why we offer ongoing montoring, maintenance, and support for your app.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--=== End Process v1 ===-->
+<div class='container content content-sm'>
   <div class='row'>
     <div class='col-md-8 col-sm-12'>
       <div class='headline'>
-        <h2>Services</h2>
+        <h2>Pricing</h2>
       </div>
-      <p>Coming Soon.</p>
+      <p>
+        Most vendors provide you a cost estimate based on hours in hope of giving you a rough idea of how much the project will cost. Unfortunately most software project take longer than expected, which means you end up paying more money.
+      </p>
+      <p>
+        <strong>We take a different approach</strong> pricing. We provide you a quote based on the business goals you wish to achieve. <strong>The quote is the price you pay and not a penny more.</strong> And if we unable to help you achieve your goals and you are not satisfied with the work, then <strong>we will give you a full refund.</strong>
+      </p>
+    </div>
+    <div class='col-md-4 co-sm-12'>
+      <div class='headline'>
+        <h2>Need More Info</h2>
+      </div>
+      <p>
+        Want more information? Just let me know, and we can schedule a free consultation.
+      </p>
+      <div class='leadForm'>
+        <form id='formLead'>
+          <div class='input-group'>
+            <input class='form-control' id='email' name='email' placeholder='Email Address' type='email'>
+            <span class='input-group-btn'>
+              <button class='btn-u' form='formLead' type='submit' value='Send'>Send</button>
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class='alert alert-danger' id='leadResponseError'>
+        <strong>Whoop!</strong>
+        Something went wrong. I'll fix it right away. Meanwhile, you can send me an
+        <a href="#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz">email</a>
+        and I'll be in touch shortly.
+      </div>
+      <div class='alert alert-success' id='leadResponseSuccess'>
+        <strong>Thank You!</strong>
+        I'll contact you soon.
+      </div>
     </div>
   </div>
 </div>
@@ -196,6 +301,9 @@
 
 
 
+<script type="text/javascript" src="/assets-custom/js/leads.js"></script>
+
+
 <script type="text/javascript" src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/assets/js/plugins/fancy-box.js"></script>
 
@@ -247,5 +355,6 @@
 </script>
 
 
+<script type="text/javascript">!function(){try{var a,b,c,d,g=document.getElementsByTagName("a");for(c=0;g.length-c;c++)try{b=g[c].getAttribute("href"),b&&b.indexOf("#email-protection-")>-1&&b.length>19&&(a="",d=19+b.indexOf("#email-protection-"),b.length>d&&(a=b.substr(18).replace(/[a-zA-Z]/g,function(a){return String.fromCharCode(("Z">=a?90:122)>=(a=a.charCodeAt(0)+13)?a:a-26)})),g[c].setAttribute("href","mailto:"+a))}catch(h){}}catch(h){}}();</script>
 </body>
 </html>
