@@ -59,6 +59,7 @@
     <style type="text/css">
         #leadResponseError { display:none; }
         #leadResponseSuccess { display:none; }
+        #leadBadEmailAddress { display:none; }
     </style>
 
     <!-- Fancybox -->
@@ -198,13 +199,17 @@
           <div class='input-group'>
             <input class='form-control' id='email' name='email' placeholder='Email Address' type='email'>
             <span class='input-group-btn'>
-              <button class='btn-u' form='formLead' type='submit' value='Send'>Send</button>
+              <button class='btn-u' form='formLead' id='formLead' type='submit' value='Send'>Send</button>
             </span>
           </div>
         </form>
       </div>
+      <div class='alert alert-danger' id='leadBadEmailAddress'>
+        <strong>Whoops!</strong>
+        You entered an invalid email address.
+      </div>
       <div class='alert alert-danger' id='leadResponseError'>
-        <strong>Whoop!</strong>
+        <strong>Whoops!</strong>
         Something went wrong. I'll fix it right away. Meanwhile, send me an
         <a href="#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz">email</a>
         and I'll be in touch.
@@ -347,6 +352,7 @@
 
 
 
+<script type="text/javascript" src="/assets-custom/js/mailgun_validator.js"></script>
 <script type="text/javascript" src="/assets-custom/js/leads.js"></script>
 
 
