@@ -55,6 +55,12 @@
     <link href="/assets/css/pages/blog.css" rel="stylesheet" />
 
 
+    <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <style type="text/css">
+        #leadResponseError { display:none; }
+        #leadResponseSuccess { display:none; }
+        #leadBadEmailAddress { display:none; }
+    </style>
 
     <!-- Fancybox -->
     <link rel="stylesheet" href="/assets/plugins/fancybox/source/jquery.fancybox.css">
@@ -208,88 +214,134 @@
   </div>
 </div>
 <div class='container content-sm'>
-  <div class='col-sm-12'>
-    <p>
-      In addition to
-      <a href="/services">mobile solution services,</a>
-      I provide the following products and apps:
-    </p>
-    <div class='headline'>
-      <h2>Products</h2>
+  <div class='row'>
+    <div class='col-sm-12'>
+      <div class='headline'>
+        <h2>Looking To Build An App?</h2>
+      </div>
+      <p>
+        Are you looking to build an app, and don't know how to get started? Do you need
+        <span class='highlight'>a partner who knows and understands the mobile space,</span>
+        and who can help
+        <span class='highlight'>increase your chances for success</span>?
+        I can help.
+      </p>
+      <p>
+        Get started today planning and building your next mobile app by sending me your email address. I'll reply with a few questions, then we can schedule your
+        <span class='highlight'>free consultation.</span>
+      </p>
+      <div class='leadForm'>
+        <form id='formLead'>
+          <div class='input-group'>
+            <input class='form-control' id='email' name='email' placeholder='Email Address' type='email'>
+            <span class='input-group-btn'>
+              <button class='btn-u' form='formLead' id='formLead' type='submit' value='Send'>Send</button>
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class='alert alert-danger' id='leadBadEmailAddress'>
+        <strong>Whoops!</strong>
+        You entered an invalid email address.
+      </div>
+      <div class='alert alert-danger' id='leadResponseError'>
+        <strong>Whoops!</strong>
+        Something went wrong. I'll fix it right away. Meanwhile, send me an
+        <a href="#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz">email</a>
+        and I'll be in touch.
+      </div>
+      <div class='alert alert-success' id='leadResponseSuccess'>
+        <strong>Thank You!</strong>
+        I'll contact you soon.
+      </div>
     </div>
-    <div class='row'>
-      <div class='col-sm-4'>
-        <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="https://www.peakappcare.com";'>
-          <a href='https://www.peakappcare.com'>
-            <img class='rounded-x' src='/assets-custom/img/peak-app-care/peak-app-care.png'>
-          </a>
-          <h3 class='title-v3-bg text-uppercase'>Peak App Care</h3>
-          <p>Protect your investment with app maintenance and monitoring</p>
-          <p>
-            <a class="text-uppercase" href="https://www.peakappcare.com">Learn More</a>
-          </p>
+  </div>
+</div>
+<div class='container content-sm'>
+  <div class='row'>
+    <div class='col-sm-12'>
+      <p>
+        In addition to
+        <a href="/services">mobile solution services,</a>
+        I provide the following products and apps:
+      </p>
+      <div class='headline'>
+        <h2>Products</h2>
+      </div>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="https://www.peakappcare.com";'>
+            <a href='https://www.peakappcare.com'>
+              <img class='rounded-x' src='/assets-custom/img/peak-app-care/peak-app-care.png'>
+            </a>
+            <h3 class='title-v3-bg text-uppercase'>Peak App Care</h3>
+            <p>Protect your investment with app maintenance and monitoring</p>
+            <p>
+              <a class="text-uppercase" href="https://www.peakappcare.com">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <div class='col-sm-4'>
+          <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/peakappteardown";'>
+            <a href='/peakappteardown'>
+              <img class='rounded-x' src='/assets-custom/img/peak-app-teardown/peak-app-teardown.png'>
+            </a>
+            <h3 class='title-v3-bg text-uppercase'>Peak App Teardown</h3>
+            <p>Detailed analysis and code review of your mobile app</p>
+            <p>
+              <a class="text-uppercase" href="/peakappteardown">Learn More</a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class='col-sm-4'>
-        <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/peakappteardown";'>
-          <a href='/peakappteardown'>
-            <img class='rounded-x' src='/assets-custom/img/peak-app-teardown/peak-app-teardown.png'>
-          </a>
-          <h3 class='title-v3-bg text-uppercase'>Peak App Teardown</h3>
-          <p>Detailed analysis and code review of your mobile app</p>
-          <p>
-            <a class="text-uppercase" href="/peakappteardown">Learn More</a>
-          </p>
-        </div>
+      <div class='headline'>
+        <h2>Apps</h2>
       </div>
-    </div>
-    <div class='headline'>
-      <h2>Apps</h2>
-    </div>
-    <div class='row'>
-      <div class='col-sm-4'>
-        <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/cross-post";'>
-          <a href='/cross-post'>
-            <img class='rounded-x' src='/assets-custom/img/crosspost/crosspost-logo.png'>
-          </a>
-          <h3 class='title-v3-bg text-uppercase'>Cross Post</h3>
-          <p>Fast and easy sharing across your social networks</p>
-          <p>
-            <a href='https://itunes.apple.com/app/apple-store/id872543786?pt=11907&amp;ct=wps-website&amp;mt=8&amp;at=11lcj9'><img src="/assets-custom/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
-          </p>
-          <p>
-            <a class="text-uppercase" href="/cross-post">Learn More</a>
-          </p>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/cross-post";'>
+            <a href='/cross-post'>
+              <img class='rounded-x' src='/assets-custom/img/crosspost/crosspost-logo.png'>
+            </a>
+            <h3 class='title-v3-bg text-uppercase'>Cross Post</h3>
+            <p>Fast and easy sharing across your social networks</p>
+            <p>
+              <a href='https://itunes.apple.com/app/apple-store/id872543786?pt=11907&amp;ct=wps-website&amp;mt=8&amp;at=11lcj9'><img src="/assets-custom/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
+            </p>
+            <p>
+              <a class="text-uppercase" href="/cross-post">Learn More</a>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class='col-sm-4'>
-        <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/labor-mate";'>
-          <a href='/labor-mate'>
-            <img class='rounded-x' src='/assets-custom/img/labormate/labormate-logo.png'>
-          </a>
-          <h3 class='title-v3-bg text-uppercase'>Labor Mate</h3>
-          <p>Time your labor contractions with a tap of your finger</p>
-          <p>
-            <a href='https://itunes.apple.com/app/apple-store/id293822973?pt=11907&amp;ct=wps-website&amp;mt=8&amp;at=11lcj9'><img src="/assets-custom/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
-          </p>
-          <p>
-            <a class="text-uppercase" href="/labor-mate">Learn More</a>
-          </p>
+        <div class='col-sm-4'>
+          <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/labor-mate";'>
+            <a href='/labor-mate'>
+              <img class='rounded-x' src='/assets-custom/img/labormate/labormate-logo.png'>
+            </a>
+            <h3 class='title-v3-bg text-uppercase'>Labor Mate</h3>
+            <p>Time your labor contractions with a tap of your finger</p>
+            <p>
+              <a href='https://itunes.apple.com/app/apple-store/id293822973?pt=11907&amp;ct=wps-website&amp;mt=8&amp;at=11lcj9'><img src="/assets-custom/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
+            </p>
+            <p>
+              <a class="text-uppercase" href="/labor-mate">Learn More</a>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class='col-sm-4'>
-        <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/big-screen";'>
-          <a href='/big-screen'>
-            <img class='rounded-x' src='/assets-custom/img/bigscreen/bigscreen-logo.png'>
-          </a>
-          <h3 class='title-v3-bg text-uppercase'>Big Screen</h3>
-          <p>See your camera's live video stream on your TV</p>
-          <p>
-            <a href='https://itunes.apple.com/app/apple-store/id720897639?pt=11907&amp;ct=wps-website&amp;mt=8&amp;at=11lcj9'><img src="/assets-custom/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
-          </p>
-          <p>
-            <a class="text-uppercase" href="/big-screen">Learn More</a>
-          </p>
+        <div class='col-sm-4'>
+          <div class='service service-block-v1 md-margin-bottom-50' onclick='location.href="/big-screen";'>
+            <a href='/big-screen'>
+              <img class='rounded-x' src='/assets-custom/img/bigscreen/bigscreen-logo.png'>
+            </a>
+            <h3 class='title-v3-bg text-uppercase'>Big Screen</h3>
+            <p>See your camera's live video stream on your TV</p>
+            <p>
+              <a href='https://itunes.apple.com/app/apple-store/id720897639?pt=11907&amp;ct=wps-website&amp;mt=8&amp;at=11lcj9'><img src="/assets-custom/img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" /></a>
+            </p>
+            <p>
+              <a class="text-uppercase" href="/big-screen">Learn More</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -385,6 +437,8 @@
 
 
 
+<script type="text/javascript" src="/assets-custom/js/mailgun_validator.js"></script>
+<script type="text/javascript" src="/assets-custom/js/leads.js"></script>
 
 
 <script type="text/javascript" src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
@@ -438,5 +492,6 @@
 </script>
 
 
+<script type="text/javascript">!function(){try{var a,b,c,d,g=document.getElementsByTagName("a");for(c=0;g.length-c;c++)try{b=g[c].getAttribute("href"),b&&b.indexOf("#email-protection-")>-1&&b.length>19&&(a="",d=19+b.indexOf("#email-protection-"),b.length>d&&(a=b.substr(18).replace(/[a-zA-Z]/g,function(a){return String.fromCharCode(("Z">=a?90:122)>=(a=a.charCodeAt(0)+13)?a:a-26)})),g[c].setAttribute("href","mailto:"+a))}catch(h){}}catch(h){}}();</script>
 </body>
 </html>
