@@ -1,13 +1,17 @@
 /*
 * Template Name: Unify - Responsive Bootstrap Template
-* Version: 1.9
 * Author: @htmlstream
 * Website: http://htmlstream.com
 */
 
 
 var App = function () {
-	//Fixed Header
+	// We extend jQuery by method hasAttr
+	$.fn.hasAttr = function(name) {
+	  return this.attr(name) !== undefined;
+	};
+
+	// Fixed Header
 	function handleHeader() {
 		jQuery(window).scroll(function() {
 		  if (jQuery(window).scrollTop() > 100) {
@@ -18,14 +22,14 @@ var App = function () {
 		});
 	}
 
-	//Header Mega Menu
+	// Header Mega Menu
 	function handleMegaMenu() {
 		jQuery(document).on('click', '.mega-menu .dropdown-menu', function(e) {
 			e.stopPropagation();
 		})
 	}
 
-	//Search Box (Header)
+	// Search Box (Header)
 	function handleSearch() {
 		jQuery('.search').on("click", function () {
 			if(jQuery('.search-btn').hasClass('fa-search')){
@@ -40,7 +44,7 @@ var App = function () {
 		});
 	}
 
-	//Search Box v1 (Header v5)
+	// Search Box v1 (Header v5)
 	function handleSearchV1() {
 		jQuery('.header-v5 .search-button').click(function () {
 			jQuery('.header-v5 .search-open').slideDown();
@@ -105,14 +109,14 @@ var App = function () {
 		});
 	}
 
-	//Sidebar Navigation Toggle
+	// Sidebar Navigation Toggle
 	function handleToggle() {
 		jQuery('.list-toggle').on('click', function() {
 			jQuery(this).toggleClass('active');
 		});
 	}
 
-	//Equal Height Columns
+	// Equal Height Columns
 	function handleEqualHeightColumns() {
 		var EqualHeightColumns = function () {
 			$(".equal-height-columns").each(function() {
@@ -130,13 +134,40 @@ var App = function () {
 			EqualHeightColumns();
 		});
 		$(window).load(function() {
-			EqualHeightColumns("img.equal-height-column");
+			EqualHeightColumns();
+		});
+	}
+
+	// Equal Height Image-Columns
+	function handleEqualHeightColumns__Images() {
+		var EqualHeightColumns__Images = function () {
+			$('.equal-height-columns-v2').each(function() {
+				var heights = [];
+				$('.equal-height-column-v2', this).each(function() {
+					$(this).removeAttr('style');
+					heights.push($(this).height()); // Write column's heights to the array
+				});
+				$('.equal-height-column-v2', this).height(Math.max.apply(Math, heights)); // Find and set max
+
+				$('.equal-height-column-v2', this).each(function() {
+					if ($(this).hasAttr('data-image-src')) {
+						$(this).css('background', 'url('+$(this).attr('data-image-src')+') no-repeat scroll 50% 0 / cover');
+					}
+				});
+			});
+		}
+    $('.equal-height-columns-v2').ready(function() {
+      EqualHeightColumns__Images();
+    });
+		$(window).resize(function() {
+			EqualHeightColumns__Images();
 		});
 	}
 
 	// Full Screen
 	var handleFullscreen = function() {
 		var WindowHeight = $(window).height();
+		var HeaderHeight = 0;
 
 		if ($(document.body).hasClass("promo-padding-top")) {
 		  HeaderHeight = $(".header").height();
@@ -164,7 +195,7 @@ var App = function () {
 		});
 	}
 
-	//Hover Selector
+	// Hover Selector
 	function handleHoverSelector() {
 		// $('.hoverSelector').on('hover', function(e) {
 		// 	$('.hoverSelectorBlock', this).toggleClass('show');
@@ -184,22 +215,22 @@ var App = function () {
 	    });
 	}
 
-	//Bootstrap Tooltips and Popovers
+	// Bootstrap Tooltips and Popovers
 	function handleBootstrap() {
-		/*Bootstrap Carousel*/
+		/* Bootstrap Carousel */
 		jQuery('.carousel').carousel({
 			interval: 15000,
 			pause: 'hover'
 		});
 
-		/*Tooltips*/
+		/* Tooltips */
 		jQuery('.tooltips').tooltip();
 		jQuery('.tooltips-show').tooltip('show');
 		jQuery('.tooltips-hide').tooltip('hide');
 		jQuery('.tooltips-toggle').tooltip('toggle');
 		jQuery('.tooltips-destroy').tooltip('destroy');
 
-		/*Popovers*/
+		/* Popovers */
 		jQuery('.popovers').popover();
 		jQuery('.popovers-show').popover('show');
 		jQuery('.popovers-hide').popover('hide');
@@ -222,9 +253,10 @@ var App = function () {
 			handleFullscreen();
 			handleValignMiddle();
 			handleEqualHeightColumns();
+			handleEqualHeightColumns__Images();
 		},
 
-		//Counters
+		// Counters
 		initCounter: function () {
 			jQuery('.counter').counterUp({
 				delay: 10,
@@ -232,7 +264,7 @@ var App = function () {
 			});
 		},
 
-		//Parallax Backgrounds
+		// Parallax Backgrounds
 		initParallaxBg: function () {
 			jQuery(window).load(function() {
 				jQuery('.parallaxBg').parallax("50%", 0.2);
@@ -240,7 +272,7 @@ var App = function () {
 			});
 		},
 
-		//Scroll Bar
+		// Scroll Bar
 		initScrollBar: function () {
 			jQuery('.mCustomScrollbar').mCustomScrollbar({
 				theme:"minimal",
@@ -265,7 +297,7 @@ var App = function () {
 		  SidebarMenuDropdown();
 		},
 
-		//Animate Dropdown
+		// Animate Dropdown
 		initAnimateDropdown: function() {
 		  function MenuMode() {
 			jQuery('.dropdown').on('show.bs.dropdown', function() {
@@ -286,7 +318,5 @@ var App = function () {
 			MenuMode();
 		  }
 		},
-
 	};
-
 }();
