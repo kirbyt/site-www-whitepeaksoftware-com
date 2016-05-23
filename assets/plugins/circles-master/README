@@ -1,0 +1,90 @@
+<h1 id="circles">Circles</h1>
+
+<p><img src="http://lugolabs.com/static/circles.png" alt="Circles" /></p>
+
+<p>Lightwheight JavaScript library that generates circular graphs in SVG. Now with animation.</p>
+
+<h3 id="usage">Usage</h3>
+
+<p>Include the <code>circles.js</code> file in your HTML file. There are no dependencies.</p>
+
+<p>Create a graph by calling:</p>
+
+<p><code>js
+Circles.create({
+	id:         'circles-1',
+	percentage: 43,
+	radius:     60,
+	width:      10,
+	number:     7.13,
+	text:       '%',
+	colors:     ['#D3B6C6', '#4B253A'],
+	duration: 	400
+})
+</code></p>
+
+<p>where</p>
+
+<ul>
+  <li><code>id</code> 					- the DOM element that will hold the graph</li>
+  <li><code>percentage</code> 	- the percentage dictating the smaller circle</li>
+  <li><code>radius</code> 			- the radius of the circles</li>
+  <li><code>width</code> 			- the width of the ring (optional, has value 10, if not specified)</li>
+  <li><code>number</code>			- the number to display at the centre of the graph (optional, the percentage will show if not specified)</li>
+  <li><code>text</code> 				- the text to display after the number (optional, nothing will show if not specified)</li>
+  <li><code>colors</code> 			- an array of colors, with the first item coloring the full circle (optional, it will be <code>['#EEE', '#F00']</code> if not specified)</li>
+  <li><code>duration</code> 		- value in ms of animation's duration; defaults to 500; if <code>null</code> is passed, the animation will not run.</li>
+</ul>
+
+<h3 id="styles">Styles</h3>
+
+<p>The styles have been specified inline to avoid external dependencies. But they can be overriden via CSS easily, being simply HTML elements.</p>
+
+<p>To help with this, a few CSS classes have been exposed:</p>
+
+<ul>
+  <li><code>circles-wrp</code> 			- the element containing the graph</li>
+  <li><code>circles-text-wrp</code> 	- the element wrapping the text and number</li>
+  <li><code>circles-text</code> 			- the element containing the text</li>
+  <li><code>circles-number</code> 		- the element containing the number</li>
+</ul>
+
+<h3 id="compatibility">Compatibility</h3>
+
+<p>Browsers that support SVG.</p>
+
+<p><strong>Desktop</strong>
+* Firefox 3+
+* Chrome 4+
+* Safari 3.2+
+* Opera 9+
+* IE9 +</p>
+
+<p><strong>Mobile</strong>
+* iOS Safari 3.2+
+* Android Browser 3+
+* Opera Mobile 10+
+* Chrome for Android 18+
+* Firefox for Android 15+</p>
+
+<h3 id="inspirations">Inspirations</h3>
+
+<p>Code and ideas borrowed by:</p>
+
+<ul>
+  <li><a href="http://highcharts.com">Highcharts</a></li>
+  <li>Wout Fierens's <a href="http://svgjs.com">svg.js</a></li>
+</ul>
+
+<h3 id="licence">Licence</h3>
+
+<p>Circles is licensed under the terms of the MIT License.</p>
+
+<h3 id="changelog">Changelog</h3>
+
+<ul>
+  <li>0.0.3    Allow adding extra text to the graph (issue 3).
+         Round integers during animation.</li>
+  <li>0.0.2    Add animation.</li>
+  <li>0.0.1    First release.</li>
+</ul>

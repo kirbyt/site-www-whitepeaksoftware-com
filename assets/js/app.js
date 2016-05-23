@@ -4,7 +4,6 @@
 * Website: http://htmlstream.com
 */
 
-
 var App = function () {
 	// We extend jQuery by method hasAttr
 	$.fn.hasAttr = function(name) {

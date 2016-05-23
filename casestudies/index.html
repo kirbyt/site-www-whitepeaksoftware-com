@@ -48,6 +48,8 @@
     <link rel="stylesheet" href="/assets/plugins/layer-slider/layerslider/css/layerslider.css">
 
 
+    <link rel="stylesheet" href="/assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="/assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
 
 
     <!-- CSS Page Style -->    
@@ -55,6 +57,12 @@
     <link href="/assets/css/pages/blog.css" rel="stylesheet" />
 
 
+    <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <style type="text/css">
+        #leadResponseError { display:none; }
+        #leadResponseSuccess { display:none; }
+        #leadBadEmailAddress { display:none; }
+    </style>
 
     <!-- Fancybox -->
     <link rel="stylesheet" href="/assets/plugins/fancybox/source/jquery.fancybox.css">
@@ -97,16 +105,264 @@
   </nav>
 </div>
 
-  <div class='container content content-sm'>
+  <!--=== Breadcrumbs v3 ===-->
+<div class='breadcrumbs-v3 header-service'>
+  <div class='container text-center'>
+    <h1>
+      Case Studies
+    </h1>
+    <p>
+      Examples of Previous Work and Awesomeness
+    </p>
+  </div>
+</div>
+<!--=== End Breadcrumbs v3 ===-->
+<!--=== Cube-Portfdlio ===-->
+<div class='cube-portfolio container margin-bottom-60'>
+  <div class='content-xs'>
+    <div class='headline-center margin-bottom-60'></div>
+  </div>
+  <div class='cbp-l-grid-agency' id='grid-container'>
+    <div class='cbp-item graphic'>
+      <div class='cbp-caption margin-bottom-20'>
+        <div class='cbp-caption-defaultWrap'>
+          <img src='/assets-custom/img/past-projects/wfm.png'>
+        </div>
+        <div class='cbp-caption-activeWrap'>
+          <div class='cbp-l-caption-alignCenter'>
+            <div class='cbp-l-caption-body'>
+              <ul class='link-captions no-bottom-space'>
+                <li>
+                  <a href='https://itunes.apple.com/us/app/whole-foods-market/id320029256?mt=8'>
+                    <i class='rounded-x fa fa-link'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='cbp-title-dark'>
+        <div class='cbp-l-grid-agency-title'>
+          Whole Foods Market
+        </div>
+        <div class='cbp-l-grid-agency-desc'>
+          
+        </div>
+      </div>
+    </div>
+    <div class='cbp-item graphic'>
+      <div class='cbp-caption margin-bottom-20'>
+        <div class='cbp-caption-defaultWrap'>
+          <img src='/assets-custom/img/past-projects/pingmd.png'>
+        </div>
+        <div class='cbp-caption-activeWrap'>
+          <div class='cbp-l-caption-alignCenter'>
+            <div class='cbp-l-caption-body'>
+              <ul class='link-captions no-bottom-space'>
+                <li>
+                  <a href='https://itunes.apple.com/us/app/pingmd/id635187188?mt=8'>
+                    <i class='rounded-x fa fa-link'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='cbp-title-dark'>
+        <div class='cbp-l-grid-agency-title'>
+          Pingmd
+        </div>
+        <div class='cbp-l-grid-agency-desc'>
+          
+        </div>
+      </div>
+    </div>
+    <div class='cbp-item graphic'>
+      <div class='cbp-caption margin-bottom-20'>
+        <div class='cbp-caption-defaultWrap'>
+          <img src='/assets-custom/img/past-projects/medicomp.png'>
+        </div>
+        <div class='cbp-caption-activeWrap'>
+          <div class='cbp-l-caption-alignCenter'>
+            <div class='cbp-l-caption-body'>
+              <ul class='link-captions no-bottom-space'>
+                <li>
+                  <a href='https://medicompinc.com'>
+                    <i class='rounded-x fa fa-link'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='cbp-title-dark'>
+        <div class='cbp-l-grid-agency-title'>
+          Medicomp
+        </div>
+        <div class='cbp-l-grid-agency-desc'>
+          
+        </div>
+      </div>
+    </div>
+    <div class='cbp-item graphic'>
+      <div class='cbp-caption margin-bottom-20'>
+        <div class='cbp-caption-defaultWrap'>
+          <img src='/assets-custom/img/past-projects/uva.png'>
+        </div>
+        <div class='cbp-caption-activeWrap'>
+          <div class='cbp-l-caption-alignCenter'>
+            <div class='cbp-l-caption-body'>
+              <ul class='link-captions no-bottom-space'>
+                <li>
+                  <a href='https://itunes.apple.com/us/app/university-of-virginia/id388271262?mt=8'>
+                    <i class='rounded-x fa fa-link'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='cbp-title-dark'>
+        <div class='cbp-l-grid-agency-title'>
+          University of Virginia
+        </div>
+        <div class='cbp-l-grid-agency-desc'>
+          
+        </div>
+      </div>
+    </div>
+    <div class='cbp-item graphic'>
+      <div class='cbp-caption margin-bottom-20'>
+        <div class='cbp-caption-defaultWrap'>
+          <img src='/assets-custom/img/past-projects/tju.png'>
+        </div>
+        <div class='cbp-caption-activeWrap'>
+          <div class='cbp-l-caption-alignCenter'>
+            <div class='cbp-l-caption-body'>
+              <ul class='link-captions no-bottom-space'>
+                <li>
+                  <a href='https://itunes.apple.com/us/app/ice-at-tju/id893651047?mt=8'>
+                    <i class='rounded-x fa fa-link'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='cbp-title-dark'>
+        <div class='cbp-l-grid-agency-title'>
+          Thomas Jefferson University
+        </div>
+        <div class='cbp-l-grid-agency-desc'>
+          
+        </div>
+      </div>
+    </div>
+    <div class='cbp-item graphic'>
+      <div class='cbp-caption margin-bottom-20'>
+        <div class='cbp-caption-defaultWrap'>
+          <img src='/assets-custom/img/past-projects/customviewbook.png'>
+        </div>
+        <div class='cbp-caption-activeWrap'>
+          <div class='cbp-l-caption-alignCenter'>
+            <div class='cbp-l-caption-body'>
+              <ul class='link-captions no-bottom-space'>
+                <li>
+                  <a href='http://customviewbook.com'>
+                    <i class='rounded-x fa fa-link'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='cbp-title-dark'>
+        <div class='cbp-l-grid-agency-title'>
+          CustomViewbook
+        </div>
+        <div class='cbp-l-grid-agency-desc'>
+          
+        </div>
+      </div>
+    </div>
+    <div class='cbp-item graphic'>
+      <div class='cbp-caption margin-bottom-20'>
+        <div class='cbp-caption-defaultWrap'>
+          <img>
+        </div>
+        <div class='cbp-caption-activeWrap'>
+          <div class='cbp-l-caption-alignCenter'>
+            <div class='cbp-l-caption-body'>
+              <ul class='link-captions no-bottom-space'>
+                <li>
+                  <a>
+                    <i class='rounded-x fa fa-link'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='cbp-title-dark'>
+        <div class='cbp-l-grid-agency-title'>
+          
+        </div>
+        <div class='cbp-l-grid-agency-desc'>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--=== End Cube-Portfdlio ===-->
+<div class='container content content-sm'>
   <div class='row'>
-    <div class='col-md-8 col-sm-12'>
+    <div class='col-sm-12'>
       <div class='headline'>
-        <h2>Case Studies</h2>
+        <h2>Looking To Build An App?</h2>
       </div>
       <p>
-        I've been so busy helping companies succeed with their mobile apps that I haven't had time to write case studies about successful projects. Not to worry. You can still see samples of some of
-        <a href="/past-projects">my past work.</a>
+        Are you looking to build an app, and don't know how to get started? Do you need
+        <span class='highlight'>a partner who knows and understands the mobile space,</span>
+        and who can help
+        <span class='highlight'>increase your chances for success</span>?
+        I can help.
       </p>
+      <p>
+        Get started today planning and building your next mobile app by sending me your email address. I'll reply with a few questions, then we can schedule your
+        <span class='highlight'>free consultation.</span>
+      </p>
+      <div class='leadForm'>
+        <form id='formLead'>
+          <div class='input-group'>
+            <input class='form-control' id='email' name='email' placeholder='Email Address' type='email'>
+            <span class='input-group-btn'>
+              <button class='btn-u' form='formLead' id='formLead' type='submit' value='Send'>Send</button>
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class='alert alert-danger' id='leadBadEmailAddress'>
+        <strong>Whoops!</strong>
+        You entered an invalid email address.
+      </div>
+      <div class='alert alert-danger' id='leadResponseError'>
+        <strong>Whoops!</strong>
+        Something went wrong. I'll fix it right away. Meanwhile, send me an
+        <a href="#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz">email</a>
+        and I'll be in touch.
+      </div>
+      <div class='alert alert-success' id='leadResponseSuccess'>
+        <strong>Thank You!</strong>
+        I'll contact you soon.
+      </div>
     </div>
   </div>
 </div>
@@ -200,7 +456,11 @@
 
 
 
+<script type="text/javascript" src="/assets-custom/js/mailgun_validator.js"></script>
+<script type="text/javascript" src="/assets-custom/js/leads.js"></script>
 
+<script type="text/javascript" src="/assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script type="text/javascript" src="/assets/js/plugins/cube-portfolio/cube-portfolio-3.js"></script>
 
 <script type="text/javascript" src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/assets/js/plugins/fancy-box.js"></script>
@@ -253,5 +513,6 @@
 </script>
 
 
+<script type="text/javascript">!function(){try{var a,b,c,d,g=document.getElementsByTagName("a");for(c=0;g.length-c;c++)try{b=g[c].getAttribute("href"),b&&b.indexOf("#email-protection-")>-1&&b.length>19&&(a="",d=19+b.indexOf("#email-protection-"),b.length>d&&(a=b.substr(18).replace(/[a-zA-Z]/g,function(a){return String.fromCharCode(("Z">=a?90:122)>=(a=a.charCodeAt(0)+13)?a:a-26)})),g[c].setAttribute("href","mailto:"+a))}catch(h){}}catch(h){}}();</script>
 </body>
 </html>

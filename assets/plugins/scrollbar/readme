@@ -1,0 +1,58 @@
+<h1 id="malihu-custom-scrollbar-plugin">malihu custom scrollbar plugin</h1>
+
+<p>Highly customizable custom scrollbar jQuery plugin. Features include:</p>
+
+<ul>
+  <li>Vertical and/or horizontal scrollbar(s)</li>
+  <li>Adjustable scrolling momentum</li>
+  <li>Mouse-wheel, keyboard and touch support</li>
+  <li>Ready-to-use themes and customization via CSS</li>
+  <li>RTL direction support</li>
+  <li>Option parameters for full control of scrollbar functionality</li>
+  <li>Methods for triggering actions like scroll-to, update, destroy etc.</li>
+  <li>User-defined callbacks</li>
+  <li>Selectable/searchable content</li>
+</ul>
+
+<h4 id="installation">Installation</h4>
+
+<p>Bower: <code>bower install malihu-custom-scrollbar-plugin</code></p>
+
+<p>npm: <code>npm install malihu-custom-scrollbar-plugin</code></p>
+
+<h4 id="usage">Usage</h4>
+
+<p><code>$(selector).mCustomScrollbar();</code></p>
+
+<h4 id="for-more-information">For more information</h4>
+
+<ul>
+  <li><a href="http://manos.malihu.gr/jquery-custom-content-scroller">Plugin homepage and documentation</a></li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>jQuery version <strong>1.6.0</strong> or higher</p>
+
+<h2 id="browser-compatibility">Browser compatibility</h2>
+
+<ul>
+  <li>Internet Explorer 8+</li>
+  <li>Firefox</li>
+  <li>Chrome</li>
+  <li>Opera</li>
+  <li>Safari</li>
+  <li>iOS</li>
+  <li>Android</li>
+  <li>Windows Phone</li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<p>MIT License (MIT)</p>
+
+<p>http://opensource.org/licenses/MIT</p>
+
+<h2 id="donate">Donate</h2>
+
+<p>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UYJ5G65M6ZA28</p>

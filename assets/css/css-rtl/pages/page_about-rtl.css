@@ -1,6 +1,5 @@
 /*Parallax Block
 ------------------------------------*/
-
 .parallax-bg {
   position: relative;
   background: url(../../../img/bg/25.jpg) 50% no-repeat fixed;
