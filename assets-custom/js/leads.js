@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-  // Initialize Parse with your Parse application & javascript keys
-  Parse.initialize("GTJigWze7dImWIm8OtrF56mMqedj988I0Aj5KGFk", "c8x5Oh9wDw9q9tvnnD7axIEsY0faovZI6H2lVQy3");
-
   // capture all enter and do nothing
   $('#email').keypress(function(e) {
     if(e.which == 13) {
@@ -51,17 +48,12 @@ $(document).ready(function(){
       email: email
     }
 
-    // Run our Parse Cloud Code and
-    // pass our 'data' object to it
-    Parse.Cloud.run("contactLead", data, {
-      success: function(object) {
+    $.post( "https://hooks.zapier.com/hooks/catch/1893688/tniwgt/", data, "json" )
+      .done(function(responseData) {
         $('#leadResponseSuccess').show();
-      },
-
-      error: function(object, error) {
-        console.log(error);
+      })
+      .fail(function() {
         $('#leadResponseError').show();
-      }
-    });
+      })
   }
 });
