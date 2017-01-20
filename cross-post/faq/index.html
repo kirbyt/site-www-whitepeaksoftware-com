@@ -87,7 +87,8 @@
       <div class='collapse navbar-collapse navbar-responsive-collapse navbar-right'>
         <ul class='nav navbar-nav'>
           <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
+          <!-- %li{is_page_active('products.html')}= link_to('Products', '/products') -->
+          <li><a href="/apps">Apps</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="http://blog.whitepeaksoftware.com/">Blog</a></li>
@@ -136,7 +137,7 @@
           </div>
           <div class='panel-collapse collapse' id='00'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              Cross Post is free, but it has limits. You can post to only one social media site at a time using the free version. You can remove this limitation by purchasing the "Unlock Everything" In-App Purchase item. After making the purchase you can send your post to more than one social media site at the same time.
             </div>
           </div>
         </div>
@@ -150,7 +151,7 @@
           </div>
           <div class='panel-collapse collapse' id='01'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              The In-App Purchase is provided so you can try the app out for free. It's fully functional with one exception. You can send your post to one social media site at a time. This means if you want to send the same post to Facebook and Twitter, then you must send the post twice, once for each social media site. But if you purchase the "Unlock Everything" In-App Purchase item, then this limitation is removed and you can send your post to more than one social media site at the same time.
             </div>
           </div>
         </div>
@@ -164,7 +165,7 @@
           </div>
           <div class='panel-collapse collapse' id='02'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              It is a one time charge. You never have to pay for the app again once you purchase the "Unlock Everything" item.
             </div>
           </div>
         </div>
@@ -178,7 +179,7 @@
           </div>
           <div class='panel-collapse collapse' id='03'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              First of all thank you for your purchase. It is much appreciated. Now back to the question, no, you do not have to purchase "Unlocked Everything" on each device. You only need to purchase it once, then restore your purchase on each additional device. You can accomplish this by tapping "Restore Purchases" in the Settings screen.
             </div>
           </div>
         </div>
@@ -198,7 +199,12 @@
           </div>
           <div class='panel-collapse collapse' id='10'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              You will see this message if you try to use the share extension before ever launching the Cross Post app. You will also see this message if you have not authorized Cross Post to use your social media account. To authorize Cross Post:
+              
+              1. Launch Cross Post and tap the gear icon in the upper left corner. You'll see the Settings screen.
+              2. Tap the "Add Account" button. This will display a list of account types.
+              3. Select the account type.
+              4. Follow the online screen instructions to grant Cross Post permission to use your account.
             </div>
           </div>
         </div>
@@ -212,7 +218,7 @@
           </div>
           <div class='panel-collapse collapse' id='11'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              If you continue to see this message even after authorizing Cross Post, force Cross Post to close and launch it again. You do not need to re-authorize your account. The share extension should now see that you have authorized the social media site.
             </div>
           </div>
         </div>
@@ -232,7 +238,7 @@
           </div>
           <div class='panel-collapse collapse' id='20'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              Yes, the URL scheme is *wpscrosspost*.
             </div>
           </div>
         </div>
@@ -246,7 +252,7 @@
           </div>
           <div class='panel-collapse collapse' id='21'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              Absolutely.
             </div>
           </div>
         </div>
@@ -260,7 +266,17 @@
           </div>
           <div class='panel-collapse collapse' id='22'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              You can launch and compose new posts using the wpscrosspost URL scheme.
+              
+              To launch Cross Post, use the URL:
+              
+              **wpscrosspost://**
+              
+              To compose a new post, use:
+              
+              **wpscrosspost://compose?text=[text]&attachment=photo:last**
+              
+              Both parameters are optional. The parameter text can be any text that you want to include in the post. The parameter attachment lets you attach a photo to the post. At the moment *photo:last* is the only supported value for *attachment* parameter.
             </div>
           </div>
         </div>
@@ -280,7 +296,9 @@
           </div>
           <div class='panel-collapse collapse' id='30'>
             <div class='panel-body'>
-              <p>= qa.answer</p>
+              1. Press the Home button two times quickly. You'll see small previews of your recently used apps.
+              2. Swipe left to find the app you want to close.
+              3. Swipe up on the app's preview to close it.
             </div>
           </div>
         </div>
@@ -297,9 +315,9 @@
       <div class='row'>
         <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2 data-drip-attribute='headline'>Newsletter</h2>
+            <h2 data-drip-attribute='headline'>Subscribe to The Peak Report</h2>
           </div>
-          <p data-drip-attribute='description'>Subscribe to my newsletter and stay up to date with the latest news and deals!</p>
+          <p data-drip-attribute='description'>I'll send you valuable content about business, life, and what's happening with me. Give it a try, and unsubscribe anytime if you don't like it.</p>
           <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
             <div class='input-group'>
               <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
@@ -375,8 +393,6 @@
 
 <!-- JS Page Level -->
 <script type="text/javascript" src="/assets/js/app.js"></script>
-
-
 
 
 

@@ -95,7 +95,8 @@
       <div class='collapse navbar-collapse navbar-responsive-collapse navbar-right'>
         <ul class='nav navbar-nav'>
           <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
+          <!-- %li{is_page_active('products.html')}= link_to('Products', '/products') -->
+          <li><a href="/apps">Apps</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="http://blog.whitepeaksoftware.com/">Blog</a></li>
@@ -112,15 +113,15 @@
       Case Studies
     </h1>
     <p>
-      Examples of Previous Work and Awesomeness
+      Projects I've Worked On
     </p>
   </div>
 </div>
 <!--=== End Breadcrumbs v3 ===-->
 <!--=== Cube-Portfdlio ===-->
-<div class='cube-portfolio container margin-bottom-60'>
+<div class='cube-portfolio container margin-bottom-20'>
   <div class='content-xs'>
-    <div class='headline-center margin-bottom-60'></div>
+    <div class='headline-center margin-bottom-20'></div>
   </div>
   <div class='cbp-l-grid-agency' id='grid-container'>
     <div class='cbp-item graphic'>
@@ -325,43 +326,33 @@
 <div class='container content content-sm'>
   <div class='row'>
     <div class='col-sm-12'>
-      <div class='headline'>
-        <h2>Looking To Build An App?</h2>
-      </div>
-      <p>
-        Are you looking to build an app, and don't know how to get started? Do you need
-        <span class='highlight'>a partner who knows and understands the mobile space,</span>
-        and who can help
-        <span class='highlight'>increase your chances for success</span>?
-        I can help.
-      </p>
-      <p>
-        Get started today planning and building your next mobile app by sending me your email address. I'll reply with a few questions, then we can schedule your
-        <span class='highlight'>free consultation.</span>
-      </p>
-      <div class='leadForm'>
-        <form id='formLead'>
-          <div class='input-group'>
-            <input class='form-control' id='email' name='email' placeholder='Email Address' type='email'>
-            <span class='input-group-btn'>
-              <button class='btn-u' form='formLead' id='formLead' type='submit' value='Send'>Send</button>
-            </span>
+      <div class='call-action-v1 call-action-v1-boxed bg-color-light tag-box-v4 margin-bottom-40'>
+        <div class='call-action-v1-box'>
+          <div class='call-action-v1-in text-center'>
+            <h3>Reserve Your Confidential Consultation!</h3>
+            <p>
+              Take your first step in bringing your app idea to life. Fill out the form below, and receive an email with instructions to schedule a
+              <em>free</em>
+              consultation.
+            </p>
+            <p>
+              <form action='https://whitepeaksoftware.wufoo.com/forms/mh1je7y16wgs1q/#public' autocomplete='off' class='sky-form' enctype='multipart/form-data' id='formLead' method='post'>
+                <fieldset>
+                  <section>
+                    <input class='form-control' id='Field5' name='Field5' placeholder='First name' type='text'>
+                  </section>
+                  <section class='padding-top-5'>
+                    <input class='form-control' id='Field3' name='Field3' placeholder='Email address' type='email'>
+                  </section>
+                  <section class='padding-top-5'>
+                    <button class='btn-u' form='formLead' id='formLead' type='submit' value='Reserve Your Confidential Consultation'>Reserve Your Confidential Consultation</button>
+                    <input id='idstamp' name='idstamp' type='hidden' value='paABnTniAr300g5E433mZI+ZdoDoLJQlVYPsOLdg9C0='>
+                  </section>
+                </fieldset>
+              </form>
+            </p>
           </div>
-        </form>
-      </div>
-      <div class='alert alert-danger' id='leadBadEmailAddress'>
-        <strong>Whoops!</strong>
-        You entered an invalid email address.
-      </div>
-      <div class='alert alert-danger' id='leadResponseError'>
-        <strong>Whoops!</strong>
-        Something went wrong. I'll fix it right away. Meanwhile, send me an
-        <a href="#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz">email</a>
-        and I'll be in touch.
-      </div>
-      <div class='alert alert-success' id='leadResponseSuccess'>
-        <strong>Thank You!</strong>
-        I'll contact you soon.
+        </div>
       </div>
     </div>
   </div>
@@ -374,9 +365,9 @@
       <div class='row'>
         <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2 data-drip-attribute='headline'>Newsletter</h2>
+            <h2 data-drip-attribute='headline'>Subscribe to The Peak Report</h2>
           </div>
-          <p data-drip-attribute='description'>Subscribe to my newsletter and stay up to date with the latest news and deals!</p>
+          <p data-drip-attribute='description'>I'll send you valuable content about business, life, and what's happening with me. Give it a try, and unsubscribe anytime if you don't like it.</p>
           <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
             <div class='input-group'>
               <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
@@ -455,10 +446,6 @@
 
 
 
-
-<!-- script type="text/javascript" src="/assets-custom/js/mailgun_validator.js"></script -->
-<!-- script type="text/javascript" src="/assets-custom/js/leads.js"></script -->
-
 <script type="text/javascript" src="/assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 <script type="text/javascript" src="/assets/js/plugins/cube-portfolio/cube-portfolio-3.js"></script>
 
@@ -513,6 +500,5 @@
 </script>
 
 
-<script type="text/javascript">!function(){try{var a,b,c,d,g=document.getElementsByTagName("a");for(c=0;g.length-c;c++)try{b=g[c].getAttribute("href"),b&&b.indexOf("#email-protection-")>-1&&b.length>19&&(a="",d=19+b.indexOf("#email-protection-"),b.length>d&&(a=b.substr(18).replace(/[a-zA-Z]/g,function(a){return String.fromCharCode(("Z">=a?90:122)>=(a=a.charCodeAt(0)+13)?a:a-26)})),g[c].setAttribute("href","mailto:"+a))}catch(h){}}catch(h){}}();</script>
 </body>
 </html>

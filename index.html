@@ -93,7 +93,8 @@
       <div class='collapse navbar-collapse navbar-responsive-collapse navbar-right'>
         <ul class='nav navbar-nav'>
           <li class='active'><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
+          <!-- %li{is_page_active('products.html')}= link_to('Products', '/products') -->
+          <li><a href="/apps">Apps</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="http://blog.whitepeaksoftware.com/">Blog</a></li>
@@ -118,7 +119,7 @@
 <!--=== End Slider ===-->
 <div class='container content-sm'>
   <div class='row'>
-    <div class='col-md-8 col-sm-12'>
+    <div class='col-md-12 col-sm-12'>
       <div class='headline'>
         <h2>What If You Could Increase The Odds Of Your App Succeeding?</h2>
       </div>
@@ -141,10 +142,12 @@
         <a href="/services">Learn more...</a>
       </p>
     </div>
-    <div class='col-md-4 col-sm-12'>
-      <div class='call-action-v1 call-action-v1-boxed bg-color-light margin-bottom-40'>
+  </div>
+  <div class='row'>
+    <div class='col-md-8 col-sm-12 col-md-offset-2'>
+      <div class='call-action-v1 call-action-v1-boxed bg-color-light tag-box-v4 margin-bottom-40'>
         <div class='call-action-v1-box'>
-          <div class='call-action-v1-in'>
+          <div class='call-action-v1-in text-center'>
             <h3>Reserve Your Confidential Consultation!</h3>
             <p>
               Take your first step in bringing your app idea to life. Fill out the form below, and receive an email with instructions to schedule a
@@ -161,7 +164,7 @@
                     <input class='form-control' id='Field3' name='Field3' placeholder='Email address' type='email'>
                   </section>
                   <section class='padding-top-5'>
-                    <button class='btn-u' form='formLead' id='formLead' type='submit' value='Send'>Send</button>
+                    <button class='btn-u' form='formLead' id='formLead' type='submit' value='Reserve Your Confidential Consultation'>Reserve Your Confidential Consultation</button>
                     <input id='idstamp' name='idstamp' type='hidden' value='paABnTniAr300g5E433mZI+ZdoDoLJQlVYPsOLdg9C0='>
                   </section>
                 </fieldset>
@@ -297,7 +300,7 @@
               <input class='form-control' id='Field3' name='Field3' placeholder='Email address' type='email'>
             </section>
             <section class='padding-top-5'>
-              <button class='btn-u' form='formLead2' id='formLead2' type='submit' value='Send'>Send</button>
+              <button class='btn-u form-control' form='formLead2' id='formLead2' type='submit' value='Reserve Your Confidential Consultation'>Reserve Your Confidential Consultation</button>
               <input id='idstamp' name='idstamp' type='hidden' value='paABnTniAr300g5E433mZI+ZdoDoLJQlVYPsOLdg9C0='>
             </section>
           </fieldset>
@@ -314,9 +317,9 @@
       <div class='row'>
         <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2 data-drip-attribute='headline'>Newsletter</h2>
+            <h2 data-drip-attribute='headline'>Subscribe to The Peak Report</h2>
           </div>
-          <p data-drip-attribute='description'>Subscribe to my newsletter and stay up to date with the latest news and deals!</p>
+          <p data-drip-attribute='description'>I'll send you valuable content about business, life, and what's happening with me. Give it a try, and unsubscribe anytime if you don't like it.</p>
           <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
             <div class='input-group'>
               <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
@@ -394,10 +397,6 @@
 <script type="text/javascript" src="/assets/js/app.js"></script>
 
 
-
-
-<!-- script type="text/javascript" src="/assets-custom/js/mailgun_validator.js"></script -->
-<!-- script type="text/javascript" src="/assets-custom/js/leads.js"></script -->
 
 
 <script type="text/javascript" src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>

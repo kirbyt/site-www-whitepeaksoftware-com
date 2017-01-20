@@ -87,7 +87,8 @@
       <div class='collapse navbar-collapse navbar-responsive-collapse navbar-right'>
         <ul class='nav navbar-nav'>
           <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
+          <!-- %li{is_page_active('products.html')}= link_to('Products', '/products') -->
+          <li><a href="/apps">Apps</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="http://blog.whitepeaksoftware.com/">Blog</a></li>
@@ -131,9 +132,9 @@
       <div class='row'>
         <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2 data-drip-attribute='headline'>Newsletter</h2>
+            <h2 data-drip-attribute='headline'>Subscribe to The Peak Report</h2>
           </div>
-          <p data-drip-attribute='description'>Subscribe to my newsletter and stay up to date with the latest news and deals!</p>
+          <p data-drip-attribute='description'>I'll send you valuable content about business, life, and what's happening with me. Give it a try, and unsubscribe anytime if you don't like it.</p>
           <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
             <div class='input-group'>
               <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
@@ -209,8 +210,6 @@
 
 <!-- JS Page Level -->
 <script type="text/javascript" src="/assets/js/app.js"></script>
-
-
 
 
 

@@ -88,7 +88,8 @@
       <div class='collapse navbar-collapse navbar-responsive-collapse navbar-right'>
         <ul class='nav navbar-nav'>
           <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
+          <!-- %li{is_page_active('products.html')}= link_to('Products', '/products') -->
+          <li><a href="/apps">Apps</a></li>
           <li><a href="/services">Services</a></li>
           <li class='active'><a href="/contact">Contact</a></li>
           <li><a href="http://blog.whitepeaksoftware.com/">Blog</a></li>
@@ -100,15 +101,15 @@
 
   <div class='container content content-sm'>
   <div class='headline'>
-    <h2>Contact Us</h2>
+    <h2>Contact Me</h2>
   </div>
-  <div class='row margin-bottom-60'>
-    <div class='col-md-6 col-sm-6'>
+  <div class='row margin-bottom-20'>
+    <div class='col-md-6 col-sm-12'>
       <h3>Get in Touch</h3>
       <p>
-        Have a question and can't find the answer on this site? Send us an
+        Have a question and can't find the answer on this site? Send me an
         <a href="#email-protection-uryyb@juvgrcrnxfbsgjner.pbz">email</a>
-        and we'll be in touch.
+        and I'll be in touch.
       </p>
       <hr>
       <h3>White Peak Software, Inc.</h3>
@@ -131,8 +132,41 @@
         </li>
       </ul>
     </div>
-    <div class='col-md-6 col-sm-6'>
-      <div class='height-350' id='map'></div>
+    <div class='col-md-6 col-sm-12'>
+      <!-- .height-350#map -->
+      <img class='img-responsive img-bordered rounded-2x' src='/assets-custom/img/headshots/kt-cingleton.jpg'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-12 col-sm-12'>
+      <div class='call-action-v1 call-action-v1-boxed bg-color-light tag-box-v4 margin-bottom-40'>
+        <div class='call-action-v1-box'>
+          <div class='call-action-v1-in text-center'>
+            <h3>Reserve Your Confidential Consultation!</h3>
+            <p>
+              Take your first step in bringing your app idea to life. Fill out the form below, and receive an email with instructions to schedule a
+              <em>free</em>
+              consultation.
+            </p>
+            <p>
+              <form action='https://whitepeaksoftware.wufoo.com/forms/mh1je7y16wgs1q/#public' autocomplete='off' class='sky-form' enctype='multipart/form-data' id='formLead' method='post'>
+                <fieldset>
+                  <section>
+                    <input class='form-control' id='Field5' name='Field5' placeholder='First name' type='text'>
+                  </section>
+                  <section class='padding-top-5'>
+                    <input class='form-control' id='Field3' name='Field3' placeholder='Email address' type='email'>
+                  </section>
+                  <section class='padding-top-5'>
+                    <button class='btn-u' form='formLead' id='formLead' type='submit' value='Reserve Your Confidential Consultation'>Reserve Your Confidential Consultation</button>
+                    <input id='idstamp' name='idstamp' type='hidden' value='paABnTniAr300g5E433mZI+ZdoDoLJQlVYPsOLdg9C0='>
+                  </section>
+                </fieldset>
+              </form>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -144,9 +178,9 @@
       <div class='row'>
         <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2 data-drip-attribute='headline'>Newsletter</h2>
+            <h2 data-drip-attribute='headline'>Subscribe to The Peak Report</h2>
           </div>
-          <p data-drip-attribute='description'>Subscribe to my newsletter and stay up to date with the latest news and deals!</p>
+          <p data-drip-attribute='description'>I'll send you valuable content about business, life, and what's happening with me. Give it a try, and unsubscribe anytime if you don't like it.</p>
           <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
             <div class='input-group'>
               <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
@@ -226,8 +260,6 @@
 <script type="text/javascript" src="/assets-custom/js/contact-page.js"></script>
 <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="/assets/plugins/gmap/gmap.js"></script>
-
-
 
 
 

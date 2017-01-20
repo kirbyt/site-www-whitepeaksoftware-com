@@ -92,7 +92,8 @@
       <div class='collapse navbar-collapse navbar-responsive-collapse navbar-right'>
         <ul class='nav navbar-nav'>
           <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
+          <!-- %li{is_page_active('products.html')}= link_to('Products', '/products') -->
+          <li><a href="/apps">Apps</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="http://blog.whitepeaksoftware.com/">Blog</a></li>
@@ -113,38 +114,20 @@
       <hr>
       <h3>Sending a Support Request</h3>
       <p>
-        If you can't find the answer you seek in the FAQ section below, send us an email at
-        <a href='#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz'>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#119;&#104;&#105;&#116;&#101;&#112;&#101;&#097;&#107;&#115;&#111;&#102;&#116;&#119;&#097;&#114;&#101;&#046;&#099;&#111;&#109;</a>.
+        If you can't find the answer you seek in the FAQ section below, send me an email at
+        <a href="#email-protection-uryyb@juvgrcrnxfbsgjner.pbz">hello@whitepeaksoftware.com</a>.
         Be sure to include a description of the problem you are having and any steps that lead up to the problem.
       </p>
       <hr>
       <h3>Lost Your License Key?</h3>
-      <p>No problem, we understand. It happens to the best of us. Just supply us with your email address, and we'll email your license key(s) straight to your inbox.</p>
       <p>
-        <div class='licenseForm'>
-          <form id='formLicenseLookup'>
-            <div class='input-group'>
-              <input class='form-control' id='email' name='email' placeholder='Email Address' type='email'>
-              <span class='input-group-btn'>
-                <button class='btn-u' form='formLicenseLookup' type='submit' value='Lookup'>Send</button>
-              </span>
-            </div>
-          </form>
-        </div>
+        No problem, I understand. It happens to the best of us. Shoot me an
+        <a href="#email-protection-uryyb@juvgrcrnxfbsgjner.pbz">email</a>
+        letting me know your name and the email address you used when purchasing Killink CSV Editor or SMTP Diagnostics, and I'll reply with your license key.
       </p>
-      <div class='alert alert-danger' id='licenseResponseError'>
-        <strong>Your license was not found.</strong>
-        Sorry, but we can't seem to find your license information. You might want to try again with a different email address, or if that doesn't work, send us an
-        <a href="#email-protection-fhccbeg@juvgrcrnxfbsgjner.pbz">email</a>
-        with information about your order and we'll try finding your license another way.
-      </div>
-      <div class='alert alert-success' id='licenseResponseSuccess'>
-        <strong>Found your license!</strong>
-        Your license information was retrieved and sent your Inbox. Thank you.
-      </div>
       <hr>
       <h3>Frequently Asked Questions</h3>
-      <p>Answers to our most commonly asked questions can be found here:</p>
+      <p>Answers to commonly asked questions can be found here:</p>
       <ul class='lists-v2 margin-bottom-20'>
         <li>
           <a href="/cross-post/faq" class="color-blue">Cross Post FAQ</a>
@@ -170,9 +153,9 @@
       <div class='row'>
         <div class='col-md-4 md-margin-bottom-40'>
           <div class='headline'>
-            <h2 data-drip-attribute='headline'>Newsletter</h2>
+            <h2 data-drip-attribute='headline'>Subscribe to The Peak Report</h2>
           </div>
-          <p data-drip-attribute='description'>Subscribe to my newsletter and stay up to date with the latest news and deals!</p>
+          <p data-drip-attribute='description'>I'll send you valuable content about business, life, and what's happening with me. Give it a try, and unsubscribe anytime if you don't like it.</p>
           <form action='https://www.getdrip.com/forms/1196122/submissions' class='footer-subsribe' data-drip-embedded-form='1196122' id='formNewsletter' method='post'>
             <div class='input-group'>
               <input class='form-control' name='fields[email]' placeholder='Email Address' type='email'>
@@ -249,9 +232,6 @@
 <!-- JS Page Level -->
 <script type="text/javascript" src="/assets/js/app.js"></script>
 
-
-
-<script type="text/javascript" src="/assets-custom/js/license-lookup.js"></script>
 
 
 
